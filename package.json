@@ -1,0 +1,21 @@
+{
+  "name": "bazel-npm-repro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "12.12.21",
+    "@bazel/bazel": "^2.0.0",
+    "@bazel/ibazel": "^0.11.0",
+    "@bazel/typescript": "^1.0.0",
+    "typescript": "~3.7.4"
+  },
+  "scripts": {
+    "build": "bazel build //...",
+    "pack": "bazel run //:my-package.pack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rushi Patel",
+  "license": "ISC"
+}
